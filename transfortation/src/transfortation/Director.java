@@ -6,6 +6,8 @@ public class Director {
 		
 		System.out.println("사람을 생성합니다");
 		
+		
+		
 	}
 
 }

@@ -13,7 +13,7 @@ public class Person {
 	}
 
 	public void 지하철타러가기() {
-		System.out.println("지하철 타러가기");
+		System.out.println("지하철을 타러 갑니다");
 	}
 	
 }

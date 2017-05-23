@@ -5,7 +5,11 @@ public class Turnstile {
 	public String ment;			//멘트
 	
 	public void 열기(Card 카드) {
-		System.out.println("카드 소지하기");
+		if(카드.balance> baserate){
+			System.out.println("열렸습니다");
+		}
+				
+		System.out.println("잔액이 부족합니다");
 	}
 	
 	public void 멘트() {

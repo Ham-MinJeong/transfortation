@@ -6,7 +6,7 @@ public class ChargeStation {
 	
 	public void 충전하기(Integer 금액, Card 카드) {
 		this.chargefee = 금액;
-		chargeblance =카드.balance + 금액; 
+		chargeblance =카드.balance + this.chargefee;
 		System.out.println(금액+"원 충전합니다");
 	}
 

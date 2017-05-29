@@ -4,8 +4,7 @@ public class Card {
 	
 	
 	public Integer balance = 400;	//ภÜพื
-	public Integer total;
-//	
+	//	
 //	public Integer getBalance() {
 //		return balance;
 //	}

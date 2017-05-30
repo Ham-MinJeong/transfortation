@@ -22,7 +22,7 @@ public class Card {
 	
 	public void 금액출금(int 금액) {
 		this.balance -= 금액;
-		System.out.println("출금 후 잔액은" + balance);
+		System.out.println("출금 후 잔액은 " + balance);
 		
 	}
 	

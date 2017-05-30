@@ -3,7 +3,7 @@ package transfortation;
 public class Person {
 	public String name;		//이름
 	public Integer ages;	//나이
-	private Card 교통카드 = new Card();
+	private Card 교통카드;
 
 //	public Card get교통카드() {
 //		return 교통카드;
@@ -15,7 +15,8 @@ public class Person {
 
 	
 	public void 카드소지하기() {
-		System.out.println("카드 소지하기");
+		교통카드 = new Card();
+		System.out.println("네 알겠습니다..");
 	}
 
 	public void 카드충전하기(int 충전금액) {

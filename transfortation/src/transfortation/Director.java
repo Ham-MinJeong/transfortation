@@ -7,6 +7,9 @@ public class Director {
 		System.out.println("사람을 생성합니다");
 		Person 사람  = new Person();
 		
+		System.out.println("사람님..카드를 소지하세요!");
+		사람.카드소지하기();
+		
 		System.out.println("카드를 충전시킵니다");			
 		사람.카드충전하기(100);
 		

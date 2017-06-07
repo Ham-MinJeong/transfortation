@@ -2,26 +2,21 @@ package transfortation;
 
 public class Turnstile {
 	public Integer baserate = 500;	//±‚∫ªø‰±›
+	public static final int Gate_Open = 1;
+	public static final int Gate_Not_Open = 2;
 			
 	public void ø≠±‚(Card ƒ´µÂ) {
-		if(¿‹æ◊¡∂»∏(ƒ´µÂ)==true){
+		if(ƒ´µÂ.¿‹æ◊¡∂»∏(baserate)==true){
 			ƒ´µÂ.±›æ◊√‚±›(baserate);
-			∏‡∆Æ(1);			
+			∏‡∆Æ(Gate_Open);			
 		} else {				
-			∏‡∆Æ(2);
+			∏‡∆Æ(Gate_Not_Open);
 		}
 	}
-
-	public boolean ¿‹æ◊¡∂»∏(Card ƒ´µÂ){
-		if(ƒ´µÂ.balance>= baserate){
-			return true;
-		} else {				
-			return false;
-		}
-	}
-	
-	public void ∏‡∆Æ(Integer Ment) {
-		switch (Ment) {
+		
+	public void ∏‡∆Æ(Integer Gate_Case) {
+		
+		switch (Gate_Case) {
 		case 1:
 			System.out.println("ø≠∑»Ω¿¥œ¥Ÿ");
 			

@@ -13,9 +13,9 @@ public class Card {
 		this.balance = balance;
 	}
 
-	public void 금액충전받기(int 금액) {
+	public void 금액입금(int 금액) {
 		this.balance += 금액;
-		System.out.println("충전 후 잔액은 " + balance );
+		System.out.println("입금 후 잔액은 " + balance );
 	}	
 		
 	public void 금액출금(int 금액) {

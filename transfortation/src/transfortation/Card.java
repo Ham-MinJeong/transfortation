@@ -17,18 +17,19 @@ public class Card {
 		this.balance += 금액;
 		System.out.println("입금 후 잔액은 " + balance );
 	}	
-		
-	public void 금액출금(int 금액) {
-		this.balance -= 금액;
-		System.out.println("출금 후 잔액은 " + balance);
-	}
-	
-	public boolean 잔액조회(int 지불금액){
-		if(balance>=지불금액){
+
+	public boolean 금액출금(int 금액) {
+		if(잔액조회() >= 금액) {
+			this.balance -= 금액;
+			System.out.println("출금 후 잔액은 " + balance);
 			return true;
-		} else {				
+		} else {
 			return false;
 		}
+	}
+	
+	public int 잔액조회(){
+		return this.balance;
 	}
 	
 }

@@ -2,26 +2,25 @@ package transfortation;
 
 public class Turnstile {
 	public Integer baserate = 500;	//기본요금
-	public static final int Gate_Open = 1;
-	public static final int Gate_Not_Open = 2;
+	public static final int GATE_OPEN = 1;
+	public static final int GATE_NOT_OPEN = 2;
 			
 	public void 열기(Card 카드) {
-		if(카드.잔액조회(baserate)==true){
-			카드.금액출금(baserate);
-			멘트(Gate_Open);			
+		if (카드.금액출금(baserate)){
+			멘트(GATE_OPEN);			
 		} else {				
-			멘트(Gate_Not_Open);
+			멘트(GATE_NOT_OPEN);
 		}
 	}
 		
 	public void 멘트(Integer Gate_Case) {
 		
 		switch (Gate_Case) {
-		case 1:
+		case GATE_OPEN:
 			System.out.println("열렸습니다");
 			
 			break;
-		case 2:
+		case GATE_NOT_OPEN:
 			System.out.println("잔액이 부족합니다");
 			
 			break;

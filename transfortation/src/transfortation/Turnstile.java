@@ -17,17 +17,17 @@ public class Turnstile {
 		
 		switch (Gate_Case) {
 		case GATE_OPEN:
-			System.out.println("열렸습니다");
+			System.out.println("<Turnstile> : 열렸습니다");
 			
 			break;
 		case GATE_NOT_OPEN:
-			System.out.println("잔액이 부족합니다");
+			System.out.println("<Turnstile> : 잔액이 부족합니다");
 			
 			break;
 		default:
 			break;
 		}
-		System.out.println("감사합니다");
+		System.out.println("<Turnstile> : 감사합니다");
 	}
 	
 }

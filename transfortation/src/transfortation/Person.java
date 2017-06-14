@@ -16,16 +16,16 @@ public class Person {
 	
 	public void 카드소지하기() {
 		교통카드 = new Card();
-		System.out.println("네 알겠습니다..");
+		System.out.println("<Person> : 네 알겠습니다..");
 	}
 
 	public void 카드충전하기(int 충전금액) {
-		System.out.println("카드에 "+ 충전금액 +"원 충전합니다");
+		System.out.println("<Person> : 카드에 "+ 충전금액 +"원 충전합니다");
 		ChargeStation.충전하기(충전금액, this.교통카드);
 	}
 
 	public void 지하철타러가기(Turnstile 개찰구) {
-		System.out.println("개찰구에 카드를 찍습니다");
+		System.out.println("<Person> : 개찰구에 카드를 찍습니다");
 		개찰구.열기(교통카드);	
 	}
 	

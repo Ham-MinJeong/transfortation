@@ -9,7 +9,7 @@ public class ChargeStation {
 	
 	public static void 금액확인하기(Card 카드){
 		총잔액 = 카드.getBalance();
-		System.out.println("충전 후 잔액은 "+ 총잔액 +"원 입니다");
+		System.out.println("<ChargeStation> : 충전 후 잔액은 "+ 총잔액 +"원 입니다");
 		
 	}
 }
